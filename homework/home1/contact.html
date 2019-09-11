@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <form action="process_contact.php">
+            <p><label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required></p>
+            
+            <p><label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required></p>
+            
+            <p><label for="email">Email:</label>
+            <input type="email" id="email" name="email" required></p>
+            
+            <p><label for="gender">Gender:</label>
+            <select name="gender" required>
+                <option value="select_one" selected>Select One:</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="no_answer">Prefer not to say</option>
+            </select></p>
+            
+            <p><label for="age">Age:</label>
+            <select name="age" required>
+                <option value="select_one" selected>Select One:</option>
+                <option value="under_18">Under 18</option>
+                <option value="18_30">18-30</option>
+                <option value="30_50">30-50</option>
+                <option value="over_50">Over 50</option>
+            </select>
+                </p>
+            
+            <p>What interests you the most?</p>
+            <p><label>Eating
+                <input type="checkbox" name="eating" id="eating">
+            </label></p>
+            <p><label>Beer Drinking
+                <input type="checkbox" name="beer_drinking" id="beer_drinking">
+            </label></p>
+            <p><label>Dog Racing
+                <input type="checkbox" name="dog_racing" id="dog_racing">
+            </label></p>
+            <p><label>Kid Strangling
+                <input type="checkbox" name="kid_strangling" id="kid_strangling">
+            </label></p>
+            <p><label>Napping
+                <input type="checkbox" name="napping" id="napping">
+            </label></p>
+            <p><label>Gambling
+                <input type="checkbox" name="gambling" id="gambling">
+            </label></p>
+            <p><label>Contribution Amount:
+            <input type="number" name="contribution" id="contribution">
+            </label></p>
+            <p><label>Please check to sign up for our mailing list?</label>
+                <input type="checkbox" name="sign_up" id="sign_up" checked>
+            </label></p>
+            <p><lable>Any Comments?</lable></p>
+            <p><textarea name="comments"></textarea></p>
+            <p><button>Submit</button>
+        </form>
+    </body>
+</html>
