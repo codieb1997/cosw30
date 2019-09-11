@@ -21,17 +21,20 @@
     # != is not equal to
     
     if(empty($_REQUEST['first_name']) == true) { 
-
         echo 'Check your first name';
         error_code();
-    } else if (empty($_REQUEST['last_name']) == true) {
+    }
+    else if (empty($_REQUEST['last_name']) == true) {
         echo 'Check your last name';
         error_code();
-    } else (empty($_REQUEST['email']) == true) {
+    }
+    else if(empty($_REQUEST['email']) == true){
         echo 'Check your email';
         error_code();
-    } 
-    
+    }
+    else {
+        echo "You logged in successfully!";
+    }
 
     
     // output a little message for fun :)
